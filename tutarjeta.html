@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <title>Cards Style</title>
+</head>
+<body>
+    
+    <header class="header">
+
+        <nav class="navegacion-principal">
+
+            <ul>
+
+                <li> <a href="/">Home</a> </li>
+                <li> <a href="#" class="boton-seleccionado">Tu tarjeta</a> </li>
+                <li> <a href="#">Tarjetas Market</a> </li>
+                <li> <a href="#">Contacto</a> </li>
+                
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main class="seccion-principal contenedor">
+
+        <div class="contenedor">
+
+            <div class="tarjeta tarjeta-tuya" id="tarjeta">
+
+                <div class="datos-tarjeta">
+                    <p id="numeros-tarjeta">xxxx xxxx xxxx xxxx</p>
+                    <p> Valida hasta: <span id="mes-tarjeta">XX</span>/<span id="año-tarjeta">XX</span>  </p>
+                </div>
+                <div class="logo-name">
+                    <h3 id="nombre-usuario">NOMBRE NOMBRE APELLIDO</h3>
+                    <div class="logo">
+                        <img id="imagen" src="img/mastercard.jpg" alt="">
+                    </div>
+                </div>
+               
+            </div>
+
+            <div class="tarjeta-atras" id="tarjeta-back">
+
+                <p>Tarjeta hecha con Cards Style</p>
+
+                <div class="franja-electro">
+                    <p>XXXX XXXX XXXX XXXX</p>
+                </div>
+
+                <div class="franja-gris">
+                    <p id="numero-seguridad">528</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="menu-interaccion">
+
+            <form action="" method="POST" id="config-tarjeta"">
+
+                <ul class="formulario">
+
+                    <li> <input class="input-escrito" type="text" id="nombre" name="user_name" placeholder="Nombre Completo"> </li>
+                    <li> <input class="input-escrito" type="number" id="mes" min="1" max="12" placeholder="Mes"> </li>
+                    <li> <input class="input-escrito" type="number" id="año" min="2022" max="2025" placeholder="Año"> </li>
+                    <li> <input class="input-escrito color" type="color" name="color" id="color" value="#c8fe5c"> </li>
+
+                    <li> <select class="input-escrito" name="marca-tarjeta" id="marca-tarjeta" form="config-tarjeta">
+                        <option value="MasterCard">MasterCard</option>
+                        <option value="Visa">Visa</option>
+                        <option value="American Express">American Express</option>
+                    </select> </li>
+
+                    <!--<li> <button class="boton-input" id="boton-numeros">Generar Numeros</button> </li>-->
+                    <li> <input type="button" id="boton-numeros" class="boton-input" value="Generar Numeros"> </li>
+                    <li> <input type="button" id="boton-turnback" class="boton-back" value="Voltear"> </li>
+                </ul>
+                
+            </form>
+
+            <div class="contendor-generarPDF">
+                <input type="button" id="generar-pdf" class="boton-pdf" value="Generar PDF">
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+
+    <footer>
+        <div class="contenedor">
+            <p> &copy Cards Styles - Todos los derechos reservados </p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
